@@ -1,0 +1,23 @@
+using System;
+
+namespace TESTE {
+    class Program {
+        static void Main(string[] args) {
+        
+            int N = int.Parse(Console.ReadLine());
+           int primeiro = 1;
+            int guardanumero = 0;   
+            for (int i = 1; i <= N; i++) {
+                for(primeiro =1; primeiro<=4; primeiro++){
+                    guardanumero ++;                           // o segredo nesse desafio era criar uma variavel como contador para guardar os números que entra ali !!
+                    if( guardanumero %4 != 0 ){
+                      Console.Write(" "+ guardanumero);
+                    }else
+                    {
+                        Console.WriteLine(" PUM"); 
+                    }
+                }
+            }
+        }
+    }
+}
